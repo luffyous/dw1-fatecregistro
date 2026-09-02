@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+</head>
+<body>
+<h1>Tabelas no HTML5:</h1>
+    <!-- ESTRUTURA MINIMA DE UMA TABELA -->
+     <table border="1">
+        <tr>
+            <td>Dado1</td>
+            <td>Dado 2</td>
+            <td>Dado 3</td>
+        </tr>
+        <tr>
+            <td>Dad0 4</td>
+            <td>Dado 5</td>
+            <td>Dado 6</td>
+        </tr>
+     </table>
+     <!-- br é quebra de linha -->
+     <br><br><br>
+     <!-- exemplo de tabela completa (com mesclagem) -->
+<table border="1">
+<caption>Vendas do mês</caption>
+<thead>
+    <tr>
+        <th>Produto</th>
+        <th>Quantidade</th>
+        <th>Valor</th>
+    </tr>
+    <thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">Mouse</td>
+                <td>10</td>
+                <td>R$ 500,00</td>
+            </tr>
+            <tr>
+                
+                <td>20</td>
+                <td>R$ 1.000,00</td>
+            </tr>
+        </tbody>
+<tfoot>
+    <tr>
+        <th colspan="2">Total:</th>
+        <td>R$ 1.500,00</td>
+    </tr>
+</tfoot>
+</table>
+<!-- tabela completa com o atributo scope -->
+<br><br><br> 
+<table border="1">
+    <caption>Notas dos alunos por disciplinas</caption>
+    <thead>
+        <tr>
+            <th>Alunos</th>
+            <th>Matematica</th>
+            <th>Portugues</th>
+            <th>Historia</th>
+        </tr>
+    </thead>
+<tbody>
+    <tr>
+        <th scope="row">Ana</th>
+        <td>8.5</td>
+        <td>9.0</td>
+        <td>7.5</td>
+    </tr>
+    <tr>
+        <th scope="row">Bruno</th>
+        <td>9.5</td>
+        <td>6.0</td>
+        <td>8.5</td>
+    </tr>
+    <tr>
+        <th scope="row">Carlos</th>
+        <td>10</td>
+        <td>9.0</td>
+        <td>9.5</td>
+    </tr>
+</tbody>
+</table>
+</body>
+</html>
